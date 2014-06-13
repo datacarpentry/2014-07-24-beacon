@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- _layout/bootcamp2.html -->
     {% if page.title %}
       <title>{{ page.title }}</title>
     {% else %}
@@ -26,8 +27,10 @@
 	      <h2>A Data Carpentry Workshop</h2>
 	      <h4>Organized by and for interdisciplinary
           biologists and environmental scientists.</h4>
-              <h2>{{page.venue}}</h2>
-              {% if page.address %}{{page.address}}<br/>{% endif %}
+              <h2>{{page.venue1}}</h2>
+              {% if page.address1 %}{{page.address1}}<br/>{% endif %}
+              <h2>{{page.venue2}}</h2>
+              {% if page.address2 %}{{page.address2}}<br/>{% endif %}
               {{page.humandate}}
               {% if page.humantime %}<br/>{{page.humantime}}{% endif %}
 	    </div>
