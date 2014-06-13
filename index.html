@@ -13,11 +13,12 @@ enddate: 2014-07-25
 latlng: 42.723303,-84.479780
 registration: open
 instructor: ["Christie Bahlai", "Josh Herr", "Tracy Teal"]
-assistant: ["Alexis Black Pyrkosz", "Kevin Hall", "Qingpeng Zhang",
-"Ben Johnson"]
+assistant: ["Alexis Black Pyrkosz (MSU)", "Kevin Hall (MSU)", "Qingpeng Zhang (MSU)",
+"Ben Johnson (MSU)", "April Wright (UT Austin)"]
 contact: tkteal@msu.edu
 raw: raw.github.com/datacarpentry/2014-07-24-beacon/gh-pages
-eventbrite: 11257077221
+eventbrite1: 11953052903
+eventbrite2: 11953089011
 ---
 <!--
     Edit the values in the parameter block above to be appropriate for your bootcamp.
@@ -114,6 +115,17 @@ Data Carpentry's teaching is hands-on, so participants are required to bring the
 <p><strong>Etherpad</strong>: <a href="https://etherpad.mozilla.org/nescent-2014-05">https://etherpad.mozilla.org/nescent-2014-05</a></p>
 -->
 
+{% if page.eventbrite %}
+<h2>Registration</h2>
+<p>
+Tuition for the course is free, but prior registration is required for attending it. Registration is through EventBrite, see below.</p> 
+<h3>MSU Registration</h3>
+<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite1}}&ref=etckt" frameborder="0" width="100%" height="210" scrolling="auto"></iframe>
+<h3>UT Austin Registration</h3>
+<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite2}}&ref=etckt" frameborder="0" width="100%" height="210" scrolling="auto"></iframe>
+{% endif %}
+
+
 <h2>Acknowledgements &amp; Support</h2>
 <div class="pull-right" style="max-width: 320px; padding-left: 6px;">
   <a href="http://dataone.org" title="DataONE">
@@ -124,12 +136,7 @@ Data Carpentry's teaching is hands-on, so participants are required to bring the
 Data Carpentry is a partnership of several NSF-funded <a href="http://www.nsf.gov/dir/index.jsp?org=BIO" target="_blank">BIO</a> Centers (<a href="http://nescent.org" target="_blank">NESCent</a>, <a href="http://iplantcollaborative.org" target="_blank">iPlant</a>, <a href="http://idigbio.org" target="_blank">iDigBio</a>, <a href="http://beacon-center.org/" target="_blank">BEACON</a> and <a href="http://sesync.org" target="_blank">SESYNC</a>) and <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>, and is sponsored by the <a href="http://dataone.org" target="_blank">Data Observation Network for Earth</a> (DataONE). The structure and objectives of the curriculum as well as the teaching style are informed by <a href="http://software-carpentry.org" target="_blank">Software Carpentry</a>.
 </p>
 
-{% if page.eventbrite %}
-<h2>Registration</h2>
-<p>
-Tuition for the course is free, but prior registration is required for attending it. Registration is through EventBrite, see below.</p> 
-<iframe src="http://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt" frameborder="0" width="100%" height="210" scrolling="auto"></iframe>
-{% endif %}
+
 
 
 <!--
