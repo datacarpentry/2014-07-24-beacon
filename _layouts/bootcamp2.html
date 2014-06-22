@@ -34,6 +34,10 @@
               <p>&nbsp;<br/>
 	      {{page.humandate}}
               {% if page.humantime %}<br/>{{page.humantime}}{% endif %}
+	      <h4>Instructors:</h4>
+	      {{page.instructor | join: ', ' %}}
+</p>
+
 	    </div>
           </div>
         </div>
